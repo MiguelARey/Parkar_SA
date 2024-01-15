@@ -46,6 +46,7 @@ function BookingSys (){
                                 </select>
                             </aside>
                         </section>
+                        <input type="submit" value="Search Availability"/>
                     </form>
                 </figcaption>
             </figure>
