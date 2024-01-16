@@ -5,10 +5,12 @@
     margin: 0;
     font-family: 'Lato',sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 #body{
     display: unset;
+    background-color: #F5F7F8;
 }
 
 #main{
@@ -17,6 +19,7 @@
     width: 100%;
 }
 
+/* footer */
 #fContainer{
     width: 100%;
     background-color: #F4CE14;
@@ -119,4 +122,63 @@ footer > article{
 .fmenu > a:hover::before, .links > a:hover::before, footer a:hover::before{
     transform-origin: left;
     transform: scaleX(1);
+}
+
+/* header */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    height: 80%;
+    width: 100%;
+}
+
+.bHeader {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+
+.corp{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.corp > article{
+    display: flex;
+    border-right: 1px solid lightgrey;
+    justify-content: space-around;
+    column-gap: 4vh;
+    align-items: center;
+    width: 65%;
+}
+
+.hLink:hover{
+    color: #F4CE14;
+    transition: .4s;
+}
+
+.hLink{
+    font-size: 1.2rem;
+    color: #495E57;
+}
+
+.socialm{
+    width: 6%;
+    display: flex;
+    gap: 3vh;
+}
+
+.socialm > a{
+    font-size: 1.6rem;
+    color: #495E57;
+}
+
+.socialm >a:hover{
+    color:#F4CE14;
+    transition: .4s;
 }
