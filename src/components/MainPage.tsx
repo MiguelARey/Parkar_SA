@@ -3,7 +3,7 @@ import Nav from "./Nav"
 
 function MainPage(){
     return(
-        <div>
+        <div id="main">
             <Nav/>
             <Footer/>
         </div>
