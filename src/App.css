@@ -10,13 +10,13 @@
 
 #body{
     display: unset;
-    background-color: #F5F7F8;
 }
 
 #main{
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #F5F7F8;
 }
 
 /* footer */
@@ -139,7 +139,7 @@ footer > article{
 .bHeader {
     display: flex;
     align-items: center;
-    height: 12vh;
+    height: 8vh;
 }
 
 .corp{
@@ -181,4 +181,71 @@ footer > article{
 .socialm >a:hover{
     color:#F4CE14;
     transition: .4s;
+}
+
+/* menu */
+
+#navMenu {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 4vh;
+    padding-left: 7vh;
+}
+
+.logo > img{
+    width: 10vh;
+    height: 8vh;
+}
+
+.logo > h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #495E57;
+}
+
+.menu > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4vh;
+}
+
+.menu {
+    padding-right: 7vh;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #495E57;
+}
+
+.menu a{
+    position: relative;
+}
+
+.menu a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #495E57;
+    bottom: -.6vh;
+    left: 0;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s ease-in-out;
+}
+
+.menu a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
 }
