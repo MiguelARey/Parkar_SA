@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faCarTunnel } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 interface Slide {
@@ -32,34 +36,27 @@ function MainSection({ slides }: MainSectionProps) {
 
   return (
     <div className="carousel">
-      <div className="leftArrow" onClick={prevSlide}>
-        &#8592;
-      </div>
-      <div className="rightArrow" onClick={nextSlide}>
-        &#x2192;
-      </div>
       <div
         className="slide"
         style={{ backgroundImage: `url(${slides[idx].img})` }}
       ></div>
       <article>
-        <h1>
-        {slides[idx].title}
-        </h1>
-        <h3>
-        {slides[idx].text1}
-        </h3>
-        <h5>
-        {slides[idx].text2}
-        </h5>
-      </article>
-      <div className="carouselExp">
-        {slides.map((item, id) => (
-          <div className="dots" key={id} onClick={()=>expSlide(id)}>
-            &#x2022;
+        <aside>
+          <h1>{slides[idx].title}</h1>
+          <h3>{slides[idx].text1}</h3>
+          <h5>{slides[idx].text2}</h5>
+        </aside>
+        <a href="#">Learn More</a>
+        <section>
+          <FontAwesomeIcon className="leftArrow" onClick={prevSlide} icon={faAngleLeft} />
+          <div className="carouselExp">
+            {slides.map((item, id) => (
+              <FontAwesomeIcon className={`dots ${id === idx ? 'active' : 'inactive'}`} key={id} onClick={() => expSlide(id)} icon={faCarTunnel} />
+            ))}
           </div>
-        ))}
-      </div>
+          <FontAwesomeIcon icon={faAngleRight} className="rightArrow" onClick={nextSlide}/>
+        </section>
+      </article>
     </div>
   );
 }

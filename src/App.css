@@ -1,51 +1,92 @@
 /*Carousel*/
 
-.carouselCont{
-    width: 500px;
-    height: 280px;
-    margin: 0px auto;
-}
-
 .slide{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    width: 90vh;
+    height: 90vh;
+    border-radius: 5px;
     background-position: center;
     background-size: cover;
 }
 
 .carousel{
-    height: 100%;
-    position: relative;
+    /* height: 100%; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
-.leftArrow{
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    left: 32px;
-    font-size: 45px;
-    z-index: 1;
-    cursor: pointer;
+.carousel > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 40%;
 }
 
-.rightArrow{
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    right: 32px;
-    font-size: 45px;
-    z-index: 1;
-    cursor: pointer;
+.carousel section{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+.carousel aside{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height: 30%;
+}
+
+.carousel h5{
+    font-size: 1.3rem;
+}
+
+.carousel h1{
+    font-size: 1.4rem;
+}
+
+.carousel h3{
+    font-size: 2.4rem;
+}
+
+.carousel a{
+    font-size: 1.4rem;
+    border: 1px solid #F4CE14;
+    border-radius: 30px;
+    background-color: #F4CE14;
+    padding: 1vh 3vh;
+    color: #F5F7F8;
+}
+
+.carousel a:hover{
+    color: #F4CE14;
+    background-color: #F5F7F8;
+    transition: .4s;
 }
 
 .carouselExp{
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-.dots{
-    margin: 0 3px;
+.leftArrow, .rightArrow{
+    border: 2px solid #F4CE14;
+    border-radius: 50%;
+    width: 4vh;
+    height: 4vh;
+    padding: .3vh;
     cursor: pointer;
-    font-size: 20px;
+}
+
+
+.dots{
+    cursor: pointer;
+    font-size: 1.9rem;
+    margin: 0 2vh;
+    color: #F4CE14;
+}
+
+.inactive{
+    opacity: 50%;
 }

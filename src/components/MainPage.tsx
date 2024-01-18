@@ -11,9 +11,7 @@ function MainPage(){
 
     return(
         <div>
-            <div className="carouselCont">
                 <MainSection slides={content}/> 
-            </div>
         </div>
     )
 }
