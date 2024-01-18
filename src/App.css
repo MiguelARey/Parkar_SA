@@ -1,0 +1,76 @@
+#body{
+    display: unset;
+}
+
+/* Booking System */
+.bookCont{
+    background-color: #F4CE14;
+    opacity: .8;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookingSec{
+    background-color: #F5F7F8;
+    height: 80%;
+    width: 85%;
+    border-radius: 5px;
+}
+
+.bookingSec > figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 7vh;
+}
+
+.bookingSec img{
+    height: 98%;
+    width: 55%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vh;
+}
+
+form > h1{
+    font-size: 2.6rem;
+    color: #495E57;
+}
+
+form > section{
+    display: flex;
+    gap: 4vh;
+}
+
+.date,.time,.endDate > article, .endDate aside{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=submit]{
+    background-color: #495E57;
+    border: 1px solid #495E57;
+    color: #F5F7F8;
+    width: 60%;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+input[type=submit]:hover{
+    color: #495E57;
+    background-color: #F5F7F8;
+    transition: .4s;
+}
