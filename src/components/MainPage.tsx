@@ -4,6 +4,7 @@ import Menu from "./Menu"
 import MainSection from "./MainSection"
 import Explorer from "./Explorer"
 import LocationSect from "./LocationSect"
+import News from "./News"
 
 
 function MainPage(){
@@ -18,6 +19,7 @@ function MainPage(){
             <Menu/>
             <MainSection slides={content}/> 
             <Explorer/>
+            <News/>
             <LocationSect/>
             <Footer/>
         </div>
