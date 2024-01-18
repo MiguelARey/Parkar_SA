@@ -2,6 +2,8 @@ import Footer from "./Footer"
 import Nav from "./Nav"
 import Menu from "./Menu"
 import MainSection from "./MainSection"
+import Explorer from "./Explorer"
+import LocationSect from "./LocationSect"
 
 
 function MainPage(){
@@ -15,6 +17,8 @@ function MainPage(){
             <Nav/>
             <Menu/>
             <MainSection slides={content}/> 
+            <Explorer/>
+            <LocationSect/>
             <Footer/>
         </div>
         )
