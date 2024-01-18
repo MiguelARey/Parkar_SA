@@ -40,10 +40,13 @@
 
 .carousel h5{
     font-size: 1.3rem;
+    color: grey;
+    font-weight: 400;
 }
 
 .carousel h1{
     font-size: 1.4rem;
+    color: #495E57;
 }
 
 .carousel h3{
