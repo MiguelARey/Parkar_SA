@@ -355,6 +355,13 @@ footer > article{
 
 .gallery > figure{
     cursor: pointer;
+    width: 14vh;
+    height: 14vh;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery > figure:hover{
@@ -364,8 +371,9 @@ footer > article{
 
 
 .gallery img{
-    width: 14vh;
-    height: 14vh;
+    width: 80%;
+    height: 80%;
+    padding: 1vh;
 }
 
 .galCont{
@@ -545,6 +553,82 @@ input[type=submit]{
     transition: ease-out 0.8s;
 }
 
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    filter: blur(5px);
+    z-index: 2; 
+}
+  
+.newModal {
+background-color: white;
+padding: 20px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 3;
+color: black;
+border: 1px solid grey;
+border-radius: 5px;
+}
+  
+.modal-open .newModal {
+filter: none;
+}
+
+.modalContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContainer > figure{
+    display: flex;
+    gap: 4vh;
+}
+
+.modalContainer img{
+    width: 20vh;
+    height: 20vh;
+    padding: 2vh;
+}
+
+.modalContainer figcaption{
+    text-align: left;
+    width: 40%;
+    color: #495E57;
+}
+
+.modalContainer > h1{
+    font-size: 5rem;
+    font-weight: 900;
+    color: #495E57;
+}
+
+.modalContainer > article{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalContainer a{
+    background-color: #495E57;
+    color: #F5F7F8;
+    padding: 1vh 2vh;
+    border: 1px solid #495E57;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modalContainer a:hover{
+    color: #495E57;
+    background-color: #F5F7F8;
+    transition: .6s;
+}
 
 
 
