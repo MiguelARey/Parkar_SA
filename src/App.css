@@ -463,4 +463,88 @@ input[type=submit]{
     padding: .5vh;
 }
 
+/* burger menu */
+
+.bMenu > div{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+
+.bMenu{
+    display: flex;
+    gap: 2vh;
+}
+
+.bMenu > h4{
+    font-size: 1.2rem;
+    color: #495E57;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+
+.burger-bar{
+    width: 2.5vh;
+    height: 4px;
+    background-color: #F4CE14;
+    border-radius: 5px;
+}
+
+.navBurger{
+    width: 25%;
+    height: 30vh;
+    background-color: rgba(184,218,229, .6);
+    position: absolute;
+    top: 68px;
+    left: 435px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBurger > article{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: #495E57;
+    font-weight: 400;
+}
+
+.navBurger aside{
+    font-weight: 700;
+}
+
+.closed{
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: inherit;
+}
+
+.burger-bar.clicked{
+    transform: scale(.7);
+    transition: ease-out 0.8s;
+}
+
+.burger-bar.unclicked{
+    transform: scale(1);
+    transition: ease-out 0.8s;
+}
+
+
+
 
