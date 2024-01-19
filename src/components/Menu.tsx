@@ -7,12 +7,12 @@ function Menu(){
             </div>
             <div className="menu">
                 <ul>
-                    <li><a href="#">LINK 1</a></li>
-                    <li><a href="#">LINK 1</a></li>
-                    <li><a href="#">LINK 1</a></li>
-                    <li><a href="#">LINK 1</a></li>
-                    <li><a href="#">LINK 1</a></li>
-                    <li><a href="#">LINK 1</a></li>
+                    <li><a href="#navMenu">Home</a></li>
+                    <li><a href="#">Parking Options</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
                 </ul>
             </div>
         </nav>

@@ -29,20 +29,18 @@ function Footer() {
           </div>
           <div className="fmenu">
             <h3>Parkar SA</h3>
-            <a href="#">link 1</a>
-            <a href="#">link 1</a>
-            <a href="#">link 1</a>
-            <a href="#">link 1</a>
-            <a href="#">link 1</a>
-            <a href="#">link 1</a>
-            <a href="#">link 1</a>
-            <a href="#">link 1</a>
+            <a href="#navMenu">Home</a>
+            <a href="#">Parking Options</a>
+            <a href="#">Pricing</a>
+            <a href="#">Facilities</a>
+            <a href="#footer">Contact Us</a>
+            <a href="#">About Us</a>
           </div>
           <div className="links">
             <h3>Header 2</h3>
-            <a href="#">link 2</a>
-            <a href="#">link 2</a>
-            <a href="#">link 2</a>
+            <a href="#">Plan your visit</a>
+            <a href="#">Careers</a>
+            <a href="#">Offers</a>
           </div>
           <div className="fschedule">
             <h3>Parkar Schedule</h3>
@@ -77,8 +75,8 @@ function Footer() {
           </div>
         </div>
         <footer>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ab?</p>
+          <p>© 2024 Parkar SA. All right reserved. </p>
+          <p>® a registered trademark of Parkar Corporation. </p>
           <article>
             <a href="#">Privacy Policy</a>
             <a href="#">Accesability</a>

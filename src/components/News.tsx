@@ -8,7 +8,7 @@ function News() {
         />
         <figcaption>
           <h4>NEWSLETTER SIGN UP</h4>
-          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+          <h1>Unlock exclusive parking offers. Subscribe now!</h1>
           <form action="">
             <input
               type="text"
